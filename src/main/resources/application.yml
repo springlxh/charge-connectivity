@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+#mysql
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: jszx2017
+    url: jdbc:mysql://192.168.10.6:3306/easy_charge?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+
+
+#mybatis-plus
+mybatis-plus:
+  type-aliases-package: com.haihong.charge.connectivity
+  mapper-locations: classpath:mapper/*.xml
+
+logging:
+  config: classpath:logback-spring.xml
